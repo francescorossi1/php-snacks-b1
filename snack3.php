@@ -41,7 +41,6 @@ $posts = [
 ];
 
 $date = array_keys($posts);
-echo $date[1][2]
 ?>
 
 <!DOCTYPE html>
@@ -62,9 +61,9 @@ echo $date[1][2]
             <li><?= $posts[$date[$i]][$j]['title'] ?></li>
             <li><?= $posts[$date[$i]][$j]['author'] ?></li>
             <li><?= $posts[$date[$i]][$j]['text'] ?></li>
-            <? } ?>
+            <?php } ?>
         </ul>
-    <? endfor; ?>
+    <?php endfor; ?>
 </body>
 
 </html>
