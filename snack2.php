@@ -9,7 +9,7 @@ if(isset($_GET['age'])) $age = $_GET['age'];
 
 $has_success = false;
 
-if (strlen(trim($name)) > 3 && (str_contains($mail, '@') && str_contains($mail, '.')) && is_numeric($age)) $has_success = true;
+if (strlen(trim($name)) > 3 && (strpos($mail, '@') && strpos($mail, '.')) && is_numeric($age)) $has_success = true;
 ?>
 
 <!DOCTYPE html>
