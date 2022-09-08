@@ -17,10 +17,10 @@ if (strlen(trim($name)) > 3 && (str_contains($mail, '@') && str_contains($mail, 
     <title>Snack PHP #2</title>
 </head>
 <body>
-    <?php if($has_success) : ?>
+    <?php if($has_success) { ?>
         <h2>Accesso Riuscito</h2>
-    <?php else : ?>
+    <?php } else { ?>
         <h2>Accesso Negato</h2>
-    <?php endif; ?>
+    <?php } ?>
 </body>
 </html>
