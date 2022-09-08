@@ -1,7 +1,11 @@
 <?php 
-$name = $_GET['name'] ?? '';
-$mail = $_GET['mail'] ?? '';
-$age = $_GET['age'] ?? '';
+$name = '';
+$mail = '';
+$age =  '';
+
+if(isset($_GET['name'])) $name = $_GET['name'];
+if(isset($_GET['mail'])) $mail = $_GET['mail'];
+if(isset($_GET['age'])) $age = $_GET['age'];
 
 $has_success = false;
 
